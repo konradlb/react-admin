@@ -1,0 +1,21 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background: linear-gradient(
+      to right,
+      rgb(255, 255, 255) 0px,
+      rgb(255, 255, 255) 53px,
+      rgba(0, 0, 0, 0.1) 353px
+    ),
+    linear-gradient(
+      to left,
+      rgb(255, 255, 255) 0px,
+      rgb(255, 255, 255) 53px,
+      rgba(0, 0, 0, 0.1) 353px
+    );
+}
