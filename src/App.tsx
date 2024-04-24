@@ -1,12 +1,12 @@
-import "./app.module.css";
+import "./App.module.css";
+import { Admin, Resource, ListGuesser } from "react-admin";
+import { dataProvider } from "./helpers/dataProvider";
 
 function App() {
   return (
-    <>
-      <div>
-        <p>React admin</p>
-      </div>
-    </>
+    <Admin dataProvider={dataProvider}>
+      <Resource name="users" list={ListGuesser} />
+    </Admin>
   );
 }
 
