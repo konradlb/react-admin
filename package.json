@@ -1,6 +1,5 @@
 {
   "name": "react-admin",
-  "proxy": "http://localhost:5000",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,8 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "json": "npm run server --prefix json-server"
+    "preview": "vite preview"
   },
   "dependencies": {
     "concurrently": "^8.2.2",
