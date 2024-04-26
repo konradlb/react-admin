@@ -5,6 +5,8 @@ import {
   useRecordContext,
 } from "react-admin";
 
+import UserShowMap from "./UserShowMap";
+
 const UserShow = () => {
   const PageTitle = () => {
     const record = useRecordContext();
@@ -26,6 +28,7 @@ const UserShow = () => {
         <TextField source="company.name" />
         <TextField source="website" />
       </SimpleShowLayout>
+      <UserShowMap />
     </Show>
   );
 };
