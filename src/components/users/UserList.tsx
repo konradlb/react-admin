@@ -6,7 +6,6 @@ import {
   TopToolbar,
   CreateButton,
   ExportButton,
-  SelectColumnsButton,
 } from "react-admin";
 
 const UserList = () => {
@@ -14,7 +13,6 @@ const UserList = () => {
     <List
       actions={
         <TopToolbar>
-          <SelectColumnsButton />
           <CreateButton />
           <ExportButton />
         </TopToolbar>

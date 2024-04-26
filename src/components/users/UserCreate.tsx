@@ -1,14 +1,8 @@
-import { Edit, SimpleForm, TextInput, useRecordContext } from "react-admin";
+import { Create, SimpleForm, TextInput } from "react-admin";
 
-const UserEdit = () => {
-  const PageTitle = () => {
-    const record = useRecordContext();
-    const name = record?.name ? record.name : "";
-    return <>Edit: {name}</>;
-  };
-
+const UserCreate = () => {
   return (
-    <Edit title={<PageTitle />}>
+    <Create>
       <SimpleForm>
         <TextInput source="name" />
         <TextInput source="username" />
@@ -23,8 +17,8 @@ const UserEdit = () => {
         <TextInput source="company.name" />
         <TextInput source="website" />
       </SimpleForm>
-    </Edit>
+    </Create>
   );
 };
 
-export default UserEdit;
+export default UserCreate;
